@@ -7,22 +7,23 @@ function buttonPressed()
    // get the result paragraph
    var result = document.getElementById( "result" );
    var arr = [];
-   var table = document.getElementById( "TB" );
+   var table = document.getElementById( "table" );
    table.innerHTML =``;
    for(let i=0;i<inputRow;i++){
         arr.push([]);
+
        for(let j=0;j<inputCol;j++){
-           arr[i].push([i+j]);
+           arr[i].push(i+j);
        }
    }
-   
+   console.log(arr)
    for(let i=0;i<inputRow;i++){
-    
-    
-        table.innerHTML +="<td>"+arr[i].join(" ")+"</td>";
-    
-    
-}
+   	var row=table.insertRow(-1);
+    for(let j=0;j<inputCol;j++){
+		var Cell = row.insertCell(-1);
+           Cell.innerHTML =arr[i][j];
+       }
+	}
 }
 function start()
 {
