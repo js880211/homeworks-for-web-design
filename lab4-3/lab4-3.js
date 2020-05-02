@@ -3,5 +3,9 @@ function checkempty(){
         var text=document.getElementById("p");
         text.innerHTML="DO NOT EMPTY"
     }
+    else{
+        var text=document.getElementById("p");
+        text.innerHTML=""
+    }
     
 }
