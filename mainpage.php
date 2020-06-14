@@ -35,6 +35,9 @@
                 <h1 class="text-success">WEB DESIGN Main Page</h1>
                 <h3>全球資訊網頁設計 連結頁</h3>
                 <hr class="style1">
+                <?php
+                echo "Hello world";
+                >
             </div>
       
         
