@@ -37,7 +37,7 @@
                 <hr class="style1">
                 <?php
                 echo "Hello world";
-                >
+                ?>
             </div>
       
         
