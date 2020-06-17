@@ -50,7 +50,7 @@
                         $dbs=$db->fetchAll(PDO::FETCH_NUM);
                         foreach($dbs as $row)
                         {
-                        echo "<p class='font-weight-normal'>".$row[0]." ".$row[1]." ".$row[2]."<br></p>";
+                        echo "".$row[0]." ".$row[1]." ".$row[2]."<br>";
                         }
                 }catch(PDOException $e){
                         echo "Connection failed: ".$e->getMessage();
