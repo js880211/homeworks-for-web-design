@@ -51,7 +51,7 @@
                         {
                          for($i = 0; $i < count($row); $i++)
                           {
-                            echo $row[$i]." ";
+                            echo $row[$i];
                           }
                         echo"<br />";
                         }
