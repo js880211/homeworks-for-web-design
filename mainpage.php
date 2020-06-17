@@ -51,7 +51,7 @@
                         foreach($dbs as $row)
                         {
                         print $row."<br>";
-                        print $row[2];
+                        print_r($row);
                         }
                 }catch(PDOException $e){
                         echo "Connection failed: ".$e->getMessage();
