@@ -12,9 +12,7 @@
         <div id="loading">
           <H1>Now loading...</H1>
         </div>
-            <div class="container">
-              
-                <nav class="navbar  bg-dark navbar-dark">
+        <nav class="navbar bg-dark navbar-dark">
             <!-- Brand -->
             <a class="navbar-brand" href="#">網頁連結</a>
             <!-- Toggler/collapsibe Button -->
@@ -33,6 +31,9 @@
              
             </div>
           </nav>
+            <div class="container">
+              
+                
                 <h1 class="text-success">WEB DESIGN Main Page</h1>
                 <h3>全球資訊網頁設計 連結頁</h3>
                 <hr class="style1">
