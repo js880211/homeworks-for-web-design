@@ -41,7 +41,7 @@
                 $username = "root";
                 $password = "js880211";
                 try{
-                        $conn = new PDO("mysql:host=$servername;dbname=AnimeTable",$username,$password);
+                        $conn = new PDO("mysql:host=$servername;dbname=AnimeTable;charset=utf8",$username,$password);
                         $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); 
                         echo "Conn SUCCESS <br>";
                         $sql = "Select * from Anime";
@@ -50,6 +50,7 @@
                         
                         foreach($dbs as $row)
                         {
+
                         echo $row[0]."<br>".$row[1];
                         
                         }
