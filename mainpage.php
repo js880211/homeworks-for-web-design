@@ -28,7 +28,6 @@
                   <a class="nav-link" href="./threejs/mainscene.html">threejs</a>
                   <a class="nav-link" href="./gallery/index.html">gallery</a>
                 </li>
-               
               </ul>
               <?php
                 header("Content-Type:text/html; charset=utf-8");
@@ -38,7 +37,7 @@
                 try{
                         $conn = new PDO("mysql:host=$servername;dbname=AnimeTable;charset=utf8",$username,$password);
                         $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); 
-                        echo "Conn SUCCESS <br>";
+                        echo "<div class="container">Conn SUCCESS <br>";
                         $sql = "Select * from Anime";
                         $db=$conn->query($sql);
                         $dbs=$db->fetchAll(PDO::FETCH_NUM);
@@ -49,6 +48,7 @@
                 }catch(PDOException $e){
                         echo "Connection failed: ".$e->getMessage();
                 }
+                echo "</div>";
                 $conn = null;
                 ?>
             </div>
