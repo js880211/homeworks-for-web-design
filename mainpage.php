@@ -50,7 +50,7 @@
                         
                         foreach($dbs as $row)
                         {
-                        echo $row;
+                        echo $row[1];
                         echo"<br />";
                         }
                 }catch(PDOException $e){
