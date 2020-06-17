@@ -3,9 +3,8 @@ body{
     background-repeat: no-repeat;
     background-position: top;
     content: "";
-    position: absolute;
-  width: auto; 
-  height: auto;  
+   
+ 
   opacity: 0.5; 
   z-index: -1;
 }
