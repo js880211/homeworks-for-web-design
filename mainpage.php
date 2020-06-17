@@ -51,9 +51,8 @@
                         {
                          for($i = 0; $i < count($row); $i++)
                           {
-                            echo $row[0]." ";
+                            echo $row[$i]." ";
                           }
-                         
                         echo"<br />";
                         }
                 }catch(PDOException $e){
