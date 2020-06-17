@@ -36,7 +36,22 @@
                 <h3>全球資訊網頁設計 連結頁</h3>
                 <hr class="style1">
                 <?php
-                echo "Hello world";
+                $servername = "10.55.144.3";
+                $username = "root";
+                $password = "js880211";
+                try{
+                        $conn = new PDO("mysql:host=$servername;",$username,$password);
+                        $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); 
+                        echo "Conn SUCCESS";
+                        $sql = "SHOW DATABASES";
+                        $db=$conn->exec($sql);
+                        foreach($db as $row){
+                        print $row;echo"<br />";
+                        }
+                }catch(PDOException $e){
+                        echo "Connection failed: ".$e->getMessage();
+                }
+                $conn = null;
                 ?>
             </div>
       
