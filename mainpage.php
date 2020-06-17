@@ -43,9 +43,9 @@
                         $conn = new PDO("mysql:host=$servername;dbname=AnimeTable",$username,$password);
                         $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); 
                         echo "Conn SUCCESS <br>";
-                        $sql = "Select * from Anime Where True";
+                        $sql = "Select * from Anime";
                         $db=$conn->query($sql);
-                        $dbs=$db->fetchAll(PDO::FETCH_COLUMN);
+                        $dbs=$db->fetchAll(PDO::FETCH_COLUMN,0);
                         
                         foreach($dbs as $row){
                         print $row;echo"<br />";
