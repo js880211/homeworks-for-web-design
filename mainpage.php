@@ -52,7 +52,7 @@
                         {
 
                         echo $row."<br>";
-                        
+                        echo $row[0];
                         }
                 }catch(PDOException $e){
                         echo "Connection failed: ".$e->getMessage();
