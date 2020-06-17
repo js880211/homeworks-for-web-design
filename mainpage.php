@@ -47,8 +47,14 @@
                         $db=$conn->query($sql);
                         $dbs=$db->fetchAll(PDO::FETCH_COLUMN);
                         
-                        foreach($dbs as $row){
-                        print $row[0];echo"<br />";
+                        foreach($dbs as $row)
+                        {
+                         for($i = 0; $i < count($row); $i++)
+                          {
+                            echo $row[$i]." ";
+                          }
+                         }
+                        echo"<br />";
                         }
                 }catch(PDOException $e){
                         echo "Connection failed: ".$e->getMessage();
