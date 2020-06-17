@@ -45,7 +45,7 @@
                         echo "Conn SUCCESS <br>";
                         $sql = "Select * from Anime";
                         $db=$conn->query($sql);
-                        $dbs=$db->fetchAll(PDO::FETCH_COLUMN,0);
+                        $dbs=$db->fetchAll(PDO::FETCH_COLUMN,1);
                         
                         foreach($dbs as $row){
                         print $row;echo"<br />";
