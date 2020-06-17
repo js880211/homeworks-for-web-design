@@ -28,7 +28,7 @@ iframe{
   width: 640px;
 }
 .container{
-  
+  display: none;
 }
 #loading{
   position: absolute;
