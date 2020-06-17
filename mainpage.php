@@ -13,27 +13,7 @@
           <H1>Now loading...</H1>
         </div>
             <div class="container">
-            <?php
-                header("Content-Type:text/html; charset=utf-8");
-                $servername = "10.55.144.3";
-                $username = "root";
-                $password = "js880211";
-                try{
-                        $conn = new PDO("mysql:host=$servername;dbname=AnimeTable;charset=utf8",$username,$password);
-                        $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); 
-                        echo "Conn SUCCESS <br>";
-                        $sql = "Select * from Anime";
-                        $db=$conn->query($sql);
-                        $dbs=$db->fetchAll(PDO::FETCH_NUM);
-                        foreach($dbs as $row)
-                        {
-                        echo $row[0]." ".$row[1]." ".$row[2]."<br>";
-                        }
-                }catch(PDOException $e){
-                        echo "Connection failed: ".$e->getMessage();
-                }
-                $conn = null;
-                ?>
+              
                 <nav class="navbar  bg-dark navbar-dark">
             <!-- Brand -->
             <a class="navbar-brand" href="#">網頁連結</a>
