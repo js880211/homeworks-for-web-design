@@ -40,13 +40,13 @@
                 $username = "root";
                 $password = "js880211";
                 try{
-                        $conn = new PDO("mysql:host=$servername;",$username,$password);
+                        $conn = new PDO("mysql:host=$servername;dbname=AnimeTable",$username,$password);
                         $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); 
-                        echo "Conn SUCCESS";
-                        $sql = "SHOW DATABASES";
+                        echo "Conn SUCCESS <br>";
+                        $sql = "Select * from Anime";
                         $db=$conn->query($sql);
                         $dbs=$db->fetchAll(PDO::FETCH_COLUMN);
-                        echo $dbs;
+                        
                         foreach($dbs as $row){
                         print $row;echo"<br />";
                         }
