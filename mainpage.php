@@ -49,7 +49,7 @@
                         $dbs=$db->fetchAll(PDO::FETCH_NUM);
                         foreach($dbs as $row)
                         {
-                        print $row[0]."<br>".$row[1]."<br>".$row[2];
+                        echo $row[0]." ".$row[1]." ".$row[2]."<br>";
                         }
                 }catch(PDOException $e){
                         echo "Connection failed: ".$e->getMessage();
