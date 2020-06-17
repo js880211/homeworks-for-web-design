@@ -45,7 +45,7 @@
                         $conn = new PDO("mysql:host=$servername;dbname=AnimeTable;charset=utf8",$username,$password);
                         $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); 
                         
-                        echo "<table class='table'> <tr> <th class='bg-light'>名稱</th> <th class='bg-light'>年分</th> <th class='bg-light'>月份</th> </tr>";
+                        echo "<table class='table'> <tr> <th class='bg-dark text-light'>名稱</th> <th class='bg-dark text-light'>年分</th> <th class='text-light bg-dark'>月份</th> </tr>";
                         $sql = "Select * from Anime";
                         $db=$conn->query($sql);
                         $dbs=$db->fetchAll(PDO::FETCH_NUM);
