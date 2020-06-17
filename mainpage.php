@@ -29,7 +29,13 @@
                   <a class="nav-link" href="./gallery/index.html">gallery</a>
                 </li>
               </ul>
-              <?php
+             
+            </div>
+          </nav>
+                <h1 class="text-success">WEB DESIGN Main Page</h1>
+                <h3>全球資訊網頁設計 連結頁</h3>
+                <hr class="style1">
+                 <?php
                 header("Content-Type:text/html; charset=utf-8");
                 $servername = "10.55.144.3";
                 $username = "root";
@@ -50,12 +56,6 @@
                 }
                 $conn = null;
                 ?>
-            </div>
-          </nav>
-                <h1 class="text-success">WEB DESIGN Main Page</h1>
-                <h3>全球資訊網頁設計 連結頁</h3>
-                <hr class="style1">
-                
             </div>
       
         
