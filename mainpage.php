@@ -51,7 +51,7 @@
                         foreach($dbs as $row)
                         {
                         print $row."<br>";
-                        print $row[2];
+                        print urlencode($row[2]);
                         }
                 }catch(PDOException $e){
                         echo "Connection failed: ".$e->getMessage();
