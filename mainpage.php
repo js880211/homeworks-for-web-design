@@ -46,12 +46,10 @@
                         echo "Conn SUCCESS <br>";
                         $sql = "Select * from Anime";
                         $db=$conn->query($sql);
-                        $dbs=$db->fetchAll(PDO::FETCH_COLUMN,0);
-                        
+                        $dbs=$db->fetchAll(PDO::FETCH_NUM);
                         foreach($dbs as $row)
                         {
-                        print $row."<br>";
-                        
+                        print $row[0]."<br>".$row[1]."<br>".$row[2];
                         }
                 }catch(PDOException $e){
                         echo "Connection failed: ".$e->getMessage();
