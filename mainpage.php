@@ -36,7 +36,7 @@
                 <h3>全球資訊網頁設計 連結頁</h3>
                 <hr class="style1">
                 <?php
-                
+                header("Content-Type:text/html; charset=utf-8");
                 $servername = "10.55.144.3";
                 $username = "root";
                 $password = "js880211";
