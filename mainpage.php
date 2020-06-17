@@ -51,7 +51,7 @@
                         foreach($dbs as $row)
                         {
 
-                        echo $row;
+                        echo $row."<br>";
                         
                         }
                 }catch(PDOException $e){
