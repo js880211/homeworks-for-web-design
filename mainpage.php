@@ -12,7 +12,7 @@
         <div id="loading">
           <H1>Now loading...</H1>
         </div>
-            <div class="container .bg-primary">
+            <div class="container">
               
                 <nav class="navbar  bg-dark navbar-dark">
             <!-- Brand -->

@@ -1,8 +1,4 @@
-body{
-    background-color: #FAB8AA;
-  opacity: 0.5; 
-  z-index: -1;
-}
+
 h1{
   font-family: Lucida Console;
 }
@@ -22,7 +18,7 @@ iframe{
   width: 640px;
 }
 .container{
-  display: none;
+  background-color: #FAB8AA;
 }
 #loading{
   position: absolute;
