@@ -44,8 +44,10 @@
                         $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); 
                         echo "Conn SUCCESS";
                         $sql = "SHOW DATABASES";
-                        $db=$conn->exec($sql);
-                        foreach($db as $row){
+                        $db=$conn->query($sql);
+                        $dbs=$db->fetchAll(PDO::FETCH_COLUMN);
+                        echo $dbs;
+                        foreach($dbs as $row){
                         print $row;echo"<br />";
                         }
                 }catch(PDOException $e){
