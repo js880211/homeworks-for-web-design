@@ -26,9 +26,9 @@ function finish(){
     
 }
 $(document).ready(function(){
-    $.get("animedata.php?q=2010",function(data,status){{
-        $("#menu").append('<a class="dropdown-item" href="#">2010</a>');
-    }})
     
-
+    $("#menu").append('<a class="dropdown-item" href="#">Link 1</a>');
+    $.get("animedata.php?q=2010",function(data,status){{
+        $(".container").append(data)
+    }})
 });
