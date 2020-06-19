@@ -30,9 +30,8 @@ $(document).ready(function () {
         var arr = JSON.parse(data);
         arr.forEach((value) => {
             $("#menu").append(`<a class="dropdown-item" id="${value}" href="#">${value}</a>`);
-            $(`${value}`).click(function () {
-                var num=value.slice(0,4);
-                $.get(`animedata.php?q=${num}`, function (data, status) {
+            $(`#${value}`).click(function () {
+                $.get(`animedata.php?q=${value}`, function (data, status) {
                     {
                         $(".container").append(data)
                     }
