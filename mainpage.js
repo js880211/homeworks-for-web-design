@@ -26,9 +26,9 @@ function finish(){
     
 }
 $(document).ready(function(){
-    $.get("animedata.php?g=1",function(data,status){
+    /*$.get("animedata.php?g=1",function(data,status){
         $("#menu").append(data);
-    });
+    });*/
     
     $("#2010").click(function(){
         $.get("animedata.php?q=2010",function(data,status){{
