@@ -16,10 +16,12 @@ function gentable($year){
     $sql = "Select * FROM Anime WHERE year=$year";
     $db = $conn->query($sql);
     $dbs = $db->fetchAll(PDO::FETCH_NUM);
+    $id=0;
     foreach ($dbs as $row) {
         echo "<tr>";
-        echo "<td>" . $row[0] . "</td><td>" . $row[1] . "</td><td>" . $row[2] . "</td><td>"."<input type='radio'>"."</td>";
+        echo "<td>" . $row[0] . "</td><td>" . $row[1] . "</td><td>" . $row[2] . "</td><td>"."<input type='radio' id='$id'>"."</td>";
         echo "</tr>";
+        $id++;
     }
     echo "</table>";
 }
