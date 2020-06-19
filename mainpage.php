@@ -42,8 +42,10 @@
       </button>
       <div class="dropdown-menu" id="menu">
       </div>
-    <div id="cols"></div>
-  </div>
+      <form id="cols">
+        <input type='submit' name='submit' value='Submit'>
+      </form>
+    </div>
   </div>
   <script src="mainpage.js">
 
