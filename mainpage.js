@@ -28,12 +28,12 @@ function finish(){
 $(document).ready(function(){
     $.get("animedata.php?g=1",function(data,status){
         var arr = JSON.parse(data);
-        arr.forEach(element => {
-            $("#menu").append(typeof arr);
+        arr.forEach((value) => {
+            $("#menu").append(`<a class="dropdown-item" id="${value}" href="#">${value}</a>`);
         });
         
-        //$("#menu").append(typeof data+"<br>");
-        $("#menu").append(a[0]);
+        
+        
         
     });
     $("#menu").append('<a class="dropdown-item" id="2010" href="#">2010</a>');
