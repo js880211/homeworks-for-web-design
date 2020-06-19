@@ -29,7 +29,7 @@ $(document).ready(function(){
     $.get("animedata.php?g=1",function(data,status){
         data[0]="{";
         
-        $("#menu").append(JSON.parse(data));
+        //$("#menu").append(JSON.parse(data));
         $("#menu").append(typeof data+"<br>");
         $("#menu").append(data[0]);
     });
