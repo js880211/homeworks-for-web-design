@@ -27,7 +27,7 @@ function finish(){
 }
 $(document).ready(function(){
     $.get("animedata.php?g=1",function(data,status){
-        $("#menu").append();
+        $("#menu").append(typeof data);
         data.forEach(()=>{});
     });
     $("#menu").append('<a class="dropdown-item" id="2010" href="#">2010</a>');
