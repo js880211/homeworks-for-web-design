@@ -17,14 +17,14 @@ function randomimg(){
     link.setAttribute("class","nav-link");
     item.appendChild(link);
     nav[0].appendChild(item);
-}
+}*/
 
 window.addEventListener("load",finish,false)
 function finish(){
     document.getElementById("loading").setAttribute("style","display:none;")
     document.getElementsByClassName("container")[0].setAttribute("style","display:block")
     
-}*/
+}
 $(document).ready(function(){
     $("#menu").append("HI");
 });
