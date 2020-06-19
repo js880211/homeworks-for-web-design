@@ -26,5 +26,5 @@ function finish(){
     
 }*/
 $(document).ready(()->{
-    $("#menu").html("<a class="dropdown-item" href="#">Link 1</a>")
+    $("#menu").html("<a class='dropdown-item' href='#'>Link 1</a>")
 });
