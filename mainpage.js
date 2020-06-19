@@ -28,10 +28,10 @@ function finish(){
 $(document).ready(function(){
     $.get("animedata.php?g=1",function(data,status){
         data[0]="{";
-
-        $("body").append(JSON.parse(data));
-        $("body").append(typeof data+"<br>");
-        $("body").append(data[0]);
+        
+        $("#menu").append(JSON.parse(data));
+        $("#menu").append(typeof data+"<br>");
+        $("#menu").append(data[0]);
     });
     $("#menu").append('<a class="dropdown-item" id="2010" href="#">2010</a>');
     $("#2010").click(function(){
