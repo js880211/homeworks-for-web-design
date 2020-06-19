@@ -23,7 +23,7 @@ function gentable($year){
         echo "</tr>";
         $id++;
     }
-    echo "<input type='submit' name='submit' value='Submit'>
+    echo "<input type='submit' name='submit' value='送出'>
     </table>";
 }
 
