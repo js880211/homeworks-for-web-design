@@ -19,7 +19,7 @@ function gentable($year){
     $id=0;
     foreach ($dbs as $row) {
         echo "<tr>";
-        echo "<td>" . $row[0] . "</td><td>" . $row[1] . "</td><td>" . $row[2] . "</td><td>"."<input type='radio' name='Checkbox' value='$id'>"."</td>";
+        echo "<td>" . $row[0] . "</td><td>" . $row[1] . "</td><td>" . $row[2] . "</td><td>"."<input type='checkbox' name='checkbox' value='$id'>"."</td>";
         echo "</tr>";
         $id++;
     }
