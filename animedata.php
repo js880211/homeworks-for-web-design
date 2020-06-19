@@ -25,11 +25,11 @@ function gentable($year){
     $sql="SELECT DISTINCT year FROM Anime";
     $db = $conn->query($sql);
     $dbs = $db->fetchAll(PDO::FETCH_NUM);
-    echo $dbs;
-    
+    $arr=array();
     foreach($dbs as $row){
-        echo $row[0];
+        array_push($arr,$row[0]);
     }
+    echo $arr;
   /*  echo "<table class='table'> <tr> <th class='bg-dark text-light'>名稱</th> <th class='bg-dark text-light'>年分</th> <th class='text-light bg-dark'>月份</th> </tr>";
     $sql = "Select * from Anime";
     $db = $conn->query($sql);
