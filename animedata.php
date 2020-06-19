@@ -8,7 +8,11 @@ try {
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 function gentable($year){
     global $conn;
-    echo "<table class='table'> <tr> <th class='bg-dark text-light'>名稱</th> <th class='bg-dark text-light'>年分</th> <th class='text-light bg-dark'>月份</th> </tr>";
+    echo "<table class='table'> <tr> 
+    <th class='bg-dark text-light'>名稱</th> 
+    <th class='bg-dark text-light'>年分</th> 
+    <th class='text-light bg-dark'>月份</th> 
+    <th class='bg-dark text-light'>看過</th> </tr>";
     $sql = "Select * FROM Anime WHERE year=$year";
     $db = $conn->query($sql);
     $dbs = $db->fetchAll(PDO::FETCH_NUM);
