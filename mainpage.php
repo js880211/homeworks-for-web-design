@@ -34,11 +34,11 @@
   </nav>
   <div class="container">
     <h1 class="text-success">WEB DESIGN Main Page</h1>
-    <h3>全球資訊網頁設計 連結頁</h3>
+    <h3>全球資訊網頁設計 期末演習</h3>
     <hr class="style1">
     <div class="dropdown">
       <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-        Dropdown button
+        動畫年份表
       </button>
       <div class="dropdown-menu" id="menu">
       </div>

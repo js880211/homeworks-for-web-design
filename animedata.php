@@ -14,7 +14,7 @@ function gentable($year){
     $dbs = $db->fetchAll(PDO::FETCH_NUM);
     foreach ($dbs as $row) {
         echo "<tr>";
-        echo "<td>" . $row[0] . "</td><td>" . $row[1] . "</td><td>" . $row[2] . "</td>";
+        echo "<td>" . $row[0] . "</td><td>" . $row[1] . "</td><td>" . $row[2] . "</td><td>"."<input type='radio'>"."</td>";
         echo "</tr>";
     }
     echo "</table>";
