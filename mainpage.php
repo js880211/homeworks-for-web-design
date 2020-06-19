@@ -40,7 +40,7 @@
       <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
         Dropdown button
       </button>
-      <div class="dropdown-menu">
+      <div class="dropdown-menu" id="menu">
 
       </div>
     </div>

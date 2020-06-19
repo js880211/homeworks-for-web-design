@@ -18,10 +18,13 @@ function randomimg(){
     item.appendChild(link);
     nav[0].appendChild(item);
 }
-*/
+
 window.addEventListener("load",finish,false)
 function finish(){
     document.getElementById("loading").setAttribute("style","display:none;")
     document.getElementsByClassName("container")[0].setAttribute("style","display:block")
     
-}
+}*/
+$(document).ready(()->{
+    $("#menu").html("<a class="dropdown-item" href="#">Link 1</a>")
+});
