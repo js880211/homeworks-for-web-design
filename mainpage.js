@@ -34,7 +34,8 @@ $(document).ready(function () {
                 var num=value.slice(0,4);
                 $.get(`animedata.php?q=${num}`, function (data, status) {
                     {
-                        $(".container").append(data)
+                        $("#cols").html('');
+                        $("#cols").append(data);
                     }
                 });
             });

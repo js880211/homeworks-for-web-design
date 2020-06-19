@@ -41,12 +41,12 @@
         Dropdown button
       </button>
       <div class="dropdown-menu" id="menu">
-
       </div>
-    </div>
+    <div id="cols"></div>
+  </div>
   </div>
   <script src="mainpage.js">
-    
+
   </script>
 </body>
 
