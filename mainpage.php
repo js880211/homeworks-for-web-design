@@ -43,7 +43,7 @@
       <div class="dropdown-menu" id="menu">
       </div>
       <form id="cols">
-        <input type='submit' name='submit' value='Submit'>
+        
       </form>
     </div>
   </div>
