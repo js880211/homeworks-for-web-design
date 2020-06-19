@@ -19,7 +19,7 @@ function gentable($year){
     }
     echo "</table>";
 }
-gentable($_GET["q"]);
+//gentable($_GET["q"]);
 if($_GET["g"]==1){
     global $conn;
     $sql="SELECT DISTINCT year FROM Anime";
