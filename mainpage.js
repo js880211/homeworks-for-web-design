@@ -30,14 +30,9 @@ $(document).ready(function(){
         var arr = JSON.parse(data);
         arr.forEach((value) => {
             $("#menu").append(`<a class="dropdown-item" id="${value}" href="#">${value}</a>`);
-            $(`${value}`).click(function(){
-                $.get("animedata.php?q=2010年",function(data,status){{
-                $(".container").append(data)
-            }});
-            });
         });
     });
-    
+    $("#menu").append('<a class="dropdown-item" id="2010" href="#">2010</a>');
     $("#2010").click(function(){
         $.get("animedata.php?q=2010",function(data,status){{
         $(".container").append(data)
