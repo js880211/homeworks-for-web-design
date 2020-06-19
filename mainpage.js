@@ -26,5 +26,5 @@ function finish(){
     
 }
 $(document).ready(function(){
-    $("#menu").append("HI");
+    $("#menu").append('<a class="dropdown-item" href="#">Link 1</a>');
 });
