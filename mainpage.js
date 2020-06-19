@@ -31,6 +31,10 @@ $(document).ready(function(){
         arr.forEach((value) => {
             $("#menu").append(`<a class="dropdown-item" id="${value}" href="#">${value}</a>`);
         });
+        
+        
+        
+        
     });
     $("#menu").append('<a class="dropdown-item" id="2010" href="#">2010</a>');
     $("#2010").click(function(){
