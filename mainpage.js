@@ -27,8 +27,11 @@ function finish(){
 }
 $(document).ready(function(){
     
-    $("#menu").append('<a class="dropdown-item" href="#">2010</a>');
-    $.get("animedata.php?q=2010",function(data,status){{
+    $("#menu").append('<a class="dropdown-item" id="2010" href="#">2010</a>');
+    $("#2010").click(function(){
+        $.get("animedata.php?q=2010",function(data,status){{
         $(".container").append(data)
-    }})
+    }});
+    });
+    
 });
