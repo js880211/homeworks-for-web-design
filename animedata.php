@@ -17,7 +17,7 @@ try {
         echo "</tr>";
     }
     echo "</table>";*/
-    $sql = "Select 2010 from Anime";
+    $sql = "Select * FROM Anime WHERE year=2010";
     $db = $conn->query($sql);
     $dbs = $db->fetchAll(PDO::FETCH_NUM);
     foreach ($dbs as $row) {
