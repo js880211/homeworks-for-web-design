@@ -30,7 +30,7 @@ $(document).ready(function(){
         var a = JSON.parse(data);
         $("#menu").append(typeof a);
         //$("#menu").append(typeof data+"<br>");
-        //$("#menu").append(data);
+        $("#menu").append(a);
     });
     $("#menu").append('<a class="dropdown-item" id="2010" href="#">2010</a>');
     $("#2010").click(function(){
