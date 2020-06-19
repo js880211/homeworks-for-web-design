@@ -45,7 +45,11 @@
       </div>
     </div>
   </div>
-  <script src="mainpage.js"></script>
+  <script src="mainpage.js">
+    $(document).ready(function(){
+    $("#menu").append("HI");
+});
+  </script>
 </body>
 
 </html>
