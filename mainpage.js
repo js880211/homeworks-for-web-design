@@ -27,7 +27,7 @@ function finish(){
 }
 $(document).ready(function(){
     $.get("animedata.php?g=1",function(data,status){
-        data.array.forEach((value) => {
+        data.forEach((value) => {
             $("#menu").append(value);
         });
     });
