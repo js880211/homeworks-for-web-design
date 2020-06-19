@@ -8,7 +8,7 @@ try {
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 function gentable($year){
     global $conn;
-    echo "<table class='table'> <tr> 
+    echo "<form><table class='table'> <tr> 
     <th class='bg-dark text-light'>名稱</th> 
     <th class='bg-dark text-light'>年分</th> 
     <th class='text-light bg-dark'>月份</th> 
@@ -23,7 +23,7 @@ function gentable($year){
         echo "</tr>";
         $id++;
     }
-    echo "</table>";
+    echo "</table></form>";
 }
 
 if($_GET["g"]==1){
