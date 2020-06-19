@@ -29,7 +29,7 @@ function gentable($year){
     foreach($dbs as $row){
         array_push($arr,$row[0]);
     }
-    echo json_encode($arr);
+    echo json_encode($arr,JSON_FORCE_OBJECT);
   /*  echo "<table class='table'> <tr> <th class='bg-dark text-light'>名稱</th> <th class='bg-dark text-light'>年分</th> <th class='text-light bg-dark'>月份</th> </tr>";
     $sql = "Select * from Anime";
     $db = $conn->query($sql);
