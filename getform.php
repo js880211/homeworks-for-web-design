@@ -38,10 +38,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 // TODO: Change code below to process the `response` object:
                 console.log(response.result);
                 console.log(response.result.spreadsheetId);
-                var values = 
-                   <?php
+                var values = [ <?php
                    echo json_encode($names);
-                    ?>;
+                    ?>]
                 console.log(values)
                     // Additional rows ...;
                 var data = [];
