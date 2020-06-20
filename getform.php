@@ -37,7 +37,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             request.then(function(response) {
                 // TODO: Change code below to process the `response` object:
                 console.log(response.result);
-                console.log(spreadsheetId); 
+                console.log(response.spreadsheetId); 
             }, function(reason) {
                 console.error('error: ' + reason.result.error.message);
             });
