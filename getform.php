@@ -3,7 +3,7 @@
 $name = "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-  $name = test_input($_POST["submit"]);
+  $name = $_POST["submit"];
   echo $name;
 }
 
