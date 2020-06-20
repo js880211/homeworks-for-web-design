@@ -42,6 +42,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                    <?php
                    echo json_encode($names);
                     ?>;
+                console.log(values)
                     // Additional rows ...;
                 var data = [];
                 data.push({
