@@ -48,8 +48,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 };
                 gapi.client.sheets.spreadsheets.values.update({
                     spreadsheetId: response.result.spreadsheetId,
-                    range: range,
-                    valueInputOption: valueInputOption,
+                    range: "Sheet1!A1:D5",
+                    valueInputOption: "RAW",
                     resource: body
                 }).then((response) => {
                     var result = response.result;
