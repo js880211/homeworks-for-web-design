@@ -9,7 +9,7 @@ function initClient(){
     'discoveryDocs': ['https://sheets.googleapis.com/$discovery/rest?version=v4'],
 }).then(function () {
     gapi.auth2.getAuthInstance().isSignedIn.listen(updateSigninStatus);
-    updateSignInStatus(gapi.auth2.getAuthInstance().isSignedIn.get());
+    updateSigninStatus(gapi.auth2.getAuthInstance().isSignedIn.get());
 });}
 function updateSigninStatus(isSignedIn) {
     if (isSignedIn) {
