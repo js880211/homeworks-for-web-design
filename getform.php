@@ -39,7 +39,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 console.log(response.result.spreadsheetId);
                 var values = [
                     [
-                        "HI"
+                        "HI","OK","YOU"
                     ],
                     // Additional rows ...
                 ];
