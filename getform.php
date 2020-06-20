@@ -3,7 +3,7 @@
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $names = $_POST["checkbox"];
-    $arr=array();
+    
     foreach ($names as $name) {
         echo $name . "<br>";
         
