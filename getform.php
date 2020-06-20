@@ -1,6 +1,5 @@
 <?php
 // define variables and set to empty values
-$name = "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $names = $_POST["checkbox"];
@@ -11,3 +10,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 
 ?>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            gapi.client.sheets.spreadsheets.create({
+            properties: {
+                title: title
+            }
+            }).then((response) => {
+            });
+        </script>
+    </body>
+</html>
