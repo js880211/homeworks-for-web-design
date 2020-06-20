@@ -42,7 +42,7 @@
       </button>
       <div class="dropdown-menu" id="menu">
       </div>
-      <form id="cols">
+      <form id="cols" action="getform.php">
         
       </form>
     </div>
