@@ -48,8 +48,13 @@
     </div>
   </div>
   <script src="mainpage.js">
-
   </script>
+   <script src="GOOGLEapi/sheetapi.js">
+  </script>
+  <script async defer src="https://apis.google.com/js/api.js"
+      onload="this.onload=function(){};handleClientLoad()"
+      onreadystatechange="if (this.readyState === 'complete') this.onload()">
+    </script>
 </body>
 
 </html>
