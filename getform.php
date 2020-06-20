@@ -45,7 +45,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     // Additional rows ...;
                 var data = [];
                 data.push({
-                    range: "A1:A10",
+                    range: "A1:B10",
                     values: values
                 });
                 // Additional ranges to update.
