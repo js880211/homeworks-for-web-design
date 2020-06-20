@@ -3,11 +3,9 @@
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $names = $_POST["checkbox"];
-    $arr=array();
+    
     foreach ($names as $name) {
         echo $name . "<br>";
-        array_push($arr,$name);
-        echo $arr;
     }
 }
 ?>
@@ -42,7 +40,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 console.log(response.result.spreadsheetId);
                 var values = 
                    <?php
-                   echo $names;
+                   echo json_encode($names);
                     ?>;
                     // Additional rows ...;
                 var data = [];
