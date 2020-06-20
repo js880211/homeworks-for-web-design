@@ -37,12 +37,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 // TODO: Change code below to process the `response` object:
                 console.log(response.result);
                 console.log(response.result.spreadsheetId);
-                var values = [
+                var values = 
                    <?php
                    echo $names;
-                    ?>
-                    // Additional rows ...
-                ];
+                    ?>;
+                    // Additional rows ...;
                 var data = [];
                 data.push({
                     range: "A1:B2",
