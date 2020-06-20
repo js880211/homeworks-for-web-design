@@ -37,11 +37,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             request.then(function(response) {
                 // TODO: Change code below to process the `response` object:
                 console.log(response.result);
+                console.log(spreadsheetId); 
             }, function(reason) {
                 console.error('error: ' + reason.result.error.message);
             });
         }
-
         function initClient() {
             var API_KEY = 'AIzaSyCJHoO4_5fpyTPgfndmOG-KEwwNI-_D9Iw'; // TODO: Update placeholder with desired API key.
 
@@ -84,7 +84,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </script>
     <script async defer src="https://apis.google.com/js/api.js" onload="this.onload=function(){};handleClientLoad()" onreadystatechange="if (this.readyState === 'complete') this.onload()">
     </script>
-    <button id="signin-button" onclick="handleSignInClick()">Sign in</button>
+    <button id="signin-button" onclick="handleSignInClick()">輸出到GOOGLE表單</button>
 </body>
 
 </html>
