@@ -12,14 +12,7 @@ function initClient(){
     updateSigninStatus(gapi.auth2.getAuthInstance().isSignedIn.get());
 });}
 function updateSigninStatus(isSignedIn) {
-    if (isSignedIn) {
-        authorizeButton.style.display = 'none';
-        signoutButton.style.display = 'block';
-        listMajors();
-    } else {
-        authorizeButton.style.display = 'block';
-        signoutButton.style.display = 'none';
-    }
+    
 }
 function handleAuthClick(event) {
     gapi.auth2.getAuthInstance().signIn();
