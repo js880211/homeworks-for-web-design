@@ -3,8 +3,10 @@
 $name = "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-  $name = $_POST["checkbox"];
-  echo $name;
+  $names = $_POST["checkbox"];
+  foreach($names as $name){
+      echo $name;
+  }
 }
 
 
