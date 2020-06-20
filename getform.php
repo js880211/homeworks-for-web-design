@@ -32,16 +32,34 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     "title": "動漫列表"
                 }
             };
-
             var request = gapi.client.sheets.spreadsheets.create({}, spreadsheetBody);
             request.then(function(response) {
                 // TODO: Change code below to process the `response` object:
                 console.log(response.result);
-                console.log(response.result.spreadsheetId); 
+                console.log(response.result.spreadsheetId);
+                var values = [
+                    [
+                        "HI"
+                    ],
+                    // Additional rows ...
+                ];
+                var body = {
+                    values: values
+                };
+                gapi.client.sheets.spreadsheets.values.update({
+                    spreadsheetId: response.result.spreadsheetId,
+                    range: range,
+                    valueInputOption: valueInputOption,
+                    resource: body
+                }).then((response) => {
+                    var result = response.result;
+                    console.log(`${result.updatedCells} cells updated.`);
+                });
             }, function(reason) {
                 console.error('error: ' + reason.result.error.message);
             });
         }
+
         function initClient() {
             var API_KEY = 'AIzaSyCJHoO4_5fpyTPgfndmOG-KEwwNI-_D9Iw'; // TODO: Update placeholder with desired API key.
 
