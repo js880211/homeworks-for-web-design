@@ -42,7 +42,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     spreadsheetId: response.result.spreadsheetId, // TODO: Update placeholder value.
 
                     // The A1 notation of the values to update.
-                    range: "Sheet1!A1:D5", // TODO: Update placeholder value.
+                    range: "A1:D5", // TODO: Update placeholder value.
 
                     // How the input data should be interpreted.
                     valueInputOption: "RAW", // TODO: Update placeholder value.
