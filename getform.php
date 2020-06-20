@@ -47,9 +47,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     // How the input data should be interpreted.
                     valueInputOption: "RAW", // TODO: Update placeholder value.
                 };
-                var body = {
-                    values: values
-                };
+                
                 gapi.client.sheets.spreadsheets.values.update(params).then((response) => {
                     var result = response.result;
                     console.log(`${result.updatedCells} cells updated.`);
