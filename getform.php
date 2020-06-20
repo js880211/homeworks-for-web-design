@@ -40,7 +40,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 var values = [
                     [
                         "HI","OK",
-                    ],
+                    ],["HAHA"]
                     // Additional rows ...
                 ];
                 var data = [];
