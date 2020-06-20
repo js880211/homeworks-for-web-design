@@ -3,7 +3,7 @@
 $name = "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-  $name = $_POST["submit"];
+  $name = $_POST["checkbox"];
   echo $name;
 }
 
