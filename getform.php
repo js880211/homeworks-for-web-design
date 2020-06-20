@@ -37,21 +37,20 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 // TODO: Change code below to process the `response` object:
                 console.log(response.result);
                 console.log(response.result.spreadsheetId);
-                var values = [
-                    [
-                        "HI"
-                    ],
-                    // Additional rows ...
-                ];
+                var params = {
+                    // The ID of the spreadsheet to update.
+                    spreadsheetId: response.result.spreadsheetId, // TODO: Update placeholder value.
+
+                    // The A1 notation of the values to update.
+                    range: "Sheet1!A1:D5", // TODO: Update placeholder value.
+
+                    // How the input data should be interpreted.
+                    valueInputOption: "RAW", // TODO: Update placeholder value.
+                };
                 var body = {
                     values: values
                 };
-                gapi.client.sheets.spreadsheets.values.update({
-                    spreadsheetId: response.result.spreadsheetId,
-                    range: "Sheet1!A1:D5",
-                    valueInputOption: "RAW",
-                    resource: body
-                }).then((response) => {
+                gapi.client.sheets.spreadsheets.values.update(params).then((response) => {
                     var result = response.result;
                     console.log(`${result.updatedCells} cells updated.`);
                 });
