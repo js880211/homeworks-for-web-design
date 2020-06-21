@@ -1,4 +1,6 @@
 #cols{
+  width: 200px;
+  height: 100px;
   overflow: scroll;
 }
 h1{
