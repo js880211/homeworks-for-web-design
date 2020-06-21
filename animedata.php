@@ -24,7 +24,7 @@ function gentable($year){
         echo "</tr>";
         $id++;
     }
-    echo "</table>";
+    echo "<input type='submit' name='submit' value='送出'></table>";
 }
 
 if($_GET["g"]==1){
