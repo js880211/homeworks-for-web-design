@@ -31,12 +31,12 @@ $(document).ready(function () {
         arr.forEach((value) => {
             $("#menu").append(`<a class="dropdown-item" id="${value}" href="#">${value}</a>`);
             $(`#${value}`).click(function () {
-                var num=value.slice(0,4);
+                var num = value.slice(0, 4);
                 $.get(`animedata.php?q=${num}`, function (data, status) {
                     {
                         $("#cols").html('');
-                        $("#cols").append(data);
                         $("#cols").append("<div id='sub'><input type='submit' name='submit' value='送出'></div>");
+                        $("#cols").append(data);
                     }
                 });
             });
