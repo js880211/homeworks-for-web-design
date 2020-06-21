@@ -43,7 +43,7 @@
       <div class="dropdown-menu" id="menu">
       </div>
       <form id="cols" action="getform.php" method="post">
-        
+      <input type='submit' name='submit' value='送出' id='sub'>
       </form>
     </div>
   </div>
