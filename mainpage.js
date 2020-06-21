@@ -36,7 +36,7 @@ $(document).ready(function () {
                     {
                         $("#cols").html('');
                         $("#cols").append(data);
-                        $("#cols").html("<div id='sub'><input type='submit' name='submit' value='送出'></div>");
+                        $("#cols").append("<div id='sub'><input type='submit' name='submit' value='送出'></div>");
                     }
                 });
             });
