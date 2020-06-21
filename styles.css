@@ -28,5 +28,5 @@ iframe{
   text-align: center;
 }
 #sub{
-  position: sticky;
+  position: static;
 }
