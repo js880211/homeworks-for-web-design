@@ -35,7 +35,7 @@ $(document).ready(function () {
                 $.get(`animedata.php?q=${num}`, function (data, status) {
                     {
                         $("#cols").html('');
-                        $("#cols").append("<div id='sub'><input type='submit' name='submit' value='送出'></div>");
+                        
                         $("#cols").append(data);
                     }
                 });
