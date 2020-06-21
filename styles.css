@@ -28,5 +28,6 @@ iframe{
   text-align: center;
 }
 #sub{
-  position: sticky;
+  position: relative;
+  bottom: 0;
 }
