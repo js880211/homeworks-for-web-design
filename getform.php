@@ -111,7 +111,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <script async defer src="https://apis.google.com/js/api.js" onload="this.onload=function(){};handleClientLoad()" onreadystatechange="if (this.readyState === 'complete') this.onload()">
     </script>
     <button id="signin-button" onclick="handleSignInClick()">輸出到GOOGLE表單</button>
-    <button onclick="window.history.back();">
+    <button onclick="window.history.back();">返回</button>
 </body>
 
 </html>
