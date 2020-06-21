@@ -34,8 +34,9 @@ $(document).ready(function () {
                 var num=value.slice(0,4);
                 $.get(`animedata.php?q=${num}`, function (data, status) {
                     {
-                        $("#cols").html("<div id='sub'><input type='submit' name='submit' value='送出'></div>");
+                        $("#cols").html('');
                         $("#cols").append(data);
+                        $("#cols").html("<div id='sub'><input type='submit' name='submit' value='送出'></div>");
                     }
                 });
             });
