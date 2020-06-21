@@ -19,6 +19,7 @@ iframe{
 }
 .container{
   background-color: #FAB8AA;
+  overflow: scroll;
 }
 #loading{
   position: absolute;
@@ -29,5 +30,6 @@ iframe{
 }
 #sub{
   position: relative;
-  left: 65em;
+  left: 60em;
+
 }
