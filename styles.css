@@ -1,4 +1,6 @@
-
+#cols{
+  overflow: scroll;
+}
 h1{
   font-family: Lucida Console;
 }
@@ -19,7 +21,6 @@ iframe{
 }
 .container{
   background-color: #FAB8AA;
-  overflow: scroll;
 }
 #loading{
   position: absolute;
@@ -31,5 +32,4 @@ iframe{
 #sub{
   position: relative;
   left: 60em;
-
 }
