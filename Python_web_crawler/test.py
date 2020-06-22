@@ -1,5 +1,5 @@
 import mysql.connector
-from docutils.parsers.rst.directives import flag
+
 mydb = mysql.connector.connect(
   host="10.55.144.3",
   user="root",
