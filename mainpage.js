@@ -17,11 +17,29 @@ function randomimg(){
     link.setAttribute("class","nav-link");
     item.appendChild(link);
     nav[0].appendChild(item);
+}*/
+
+window.addEventListener("load", finish, false)
+function finish() {
+    document.getElementById("loading").setAttribute("style", "display:none;")
+    document.getElementsByClassName("container")[0].setAttribute("style", "display:block")
+
 }
-*/
-window.addEventListener("load",finish,false)
-function finish(){
-    document.getElementById("loading").setAttribute("style","display:none;")
-    document.getElementsByClassName("container")[0].setAttribute("style","display:block")
-    
-}
+$(document).ready(function () {
+    $.get("animedata.php?g=1", function (data, status) {
+        var arr = JSON.parse(data);
+        arr.forEach((value) => {
+            $("#menu").append(`<a class="dropdown-item" id="${value}" href="#">${value}</a>`);
+            $(`#${value}`).click(function () {
+                var num = value.slice(0, 4);
+                $.get(`animedata.php?q=${num}`, function (data, status) {
+                    {
+                        $("#cols").html('');
+                        
+                        $("#cols").append(data);
+                    }
+                });
+            });
+        });
+    });
+});

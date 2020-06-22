@@ -1,4 +1,7 @@
-
+#cols{
+  height: 45em;
+  overflow: scroll;
+}
 h1{
   font-family: Lucida Console;
 }
@@ -27,3 +30,4 @@ iframe{
   width: 100%;
   text-align: center;
 }
+
