@@ -1,9 +1,9 @@
 import mysql.connector
 
 mydb = mysql.connector.connect(
-  host="10.55.144.3",
-  user="root",
-  passwd="js880211",
+  host="",
+  user="",
+  passwd="",
   database="AnimeTable"
 )
 mycursor = mydb.cursor()
